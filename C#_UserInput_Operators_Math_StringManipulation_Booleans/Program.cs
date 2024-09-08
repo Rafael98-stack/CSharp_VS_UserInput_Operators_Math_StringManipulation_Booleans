@@ -4,19 +4,19 @@
 
 // Console.ReadLine() to get user input.
 
-Console.WriteLine("What's your Name?");
-
-string myName = Console.ReadLine();
-
-Console.WriteLine("My Name is: " + myName);
-
-Console.WriteLine("What's your Age?");
-
-// int myAge = Console.ReadLine(); Cannot implicitly convert type 'string' to 'int'.
-
-int myAge = Convert.ToInt32(Console.ReadLine()); // Using one of the Convert.To methods
-
-Console.WriteLine("My Age is: " + myAge);
+//Console.WriteLine("What's your Name?");
+//
+//string myName = Console.ReadLine();
+//
+//Console.WriteLine("My Name is: " + myName);
+//
+//Console.WriteLine("What's your Age?");
+//
+//// int myAge = Console.ReadLine(); Cannot implicitly convert type 'string' to 'int'.
+//
+//int myAge = Convert.ToInt32(Console.ReadLine()); // Using one of the Convert.To methods
+//
+//Console.WriteLine("My Age is: " + myAge);
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -160,3 +160,40 @@ Console.WriteLine(Math.Abs(myInt5)); // The Math.Abs(x) method returns the absol
 double myDouble6 = 99.99;
 
 Console.WriteLine(Math.Round(myDouble6)); // Math.Round() rounds a number to the nearest whole number
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/* STRING MANIPULATION */
+
+// Strings are used for storing text. A string variable contains a collection of characters surrounded by double quotes.
+
+String myString = "BlaBla";
+
+
+
+Console.WriteLine(myString + " " + myString.Length); // The length of a string can be found with the Length property
+
+Console.WriteLine(myString.ToUpper() + " " + myString.ToLower());  // Returns a copy of the string converted to uppercase or lowercase
+
+String myString2 = "WowWow";
+String myConcatString = myString + " " + myString2; // The + operator can be used between strings to combine them. This is called concatenation
+
+Console.WriteLine(myConcatString);
+
+String myConcatString2 = string.Concat(myString, myString2); // String.Concat() method to concatenate two strings
+
+Console.WriteLine(myConcatString2);
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+// STRING INTERPOLATION 
+// Another option of string concatenation, is string interpolation, which substitutes values of variables into placeholders in a string
+
+string myStringInterpol = $"I say {myString} and then say {myString2}"; // "$" for Interpolation and "{}" with the variable inside to use it
+
+Console.WriteLine(myStringInterpol + " " + $"then i say again {myString}");
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+// ACCESS STRINGS
+
