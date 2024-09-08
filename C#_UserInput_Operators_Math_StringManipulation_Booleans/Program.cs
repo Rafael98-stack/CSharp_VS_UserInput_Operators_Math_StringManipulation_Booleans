@@ -138,3 +138,25 @@ Console.WriteLine(myInt == 20 && myInt2 == 10); // AND "&&".  (TRUE && TRUE) TRU
 Console.WriteLine(myInt == 20 || myInt2 == 20); // OR "||".  (TRUE || FALSE) TRUE
 
 Console.WriteLine(!(myInt == 20 && myInt2 == 10)); // NOT "!". (TRUE && TRUE) FALSE
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/* MATH */
+
+// Allows to perform mathematical tasks on numbers
+
+Console.WriteLine(Math.Max(myInt,myInt2)); // The Math.Max(x,y) method can be used to find the highest value of x and y 
+ 
+Console.WriteLine(Math.Min(myInt, myInt2)); // The Math.Min(x,y) method can be used to find the lowest value of of x and y
+
+int myInt5 = 25;
+
+Console.WriteLine(Math.Sqrt(myInt5)); // The Math.Sqrt(x) method returns the square root of x
+
+myInt5 = -25;
+
+Console.WriteLine(Math.Abs(myInt5)); // The Math.Abs(x) method returns the absolute (positive) value of x
+
+double myDouble6 = 99.99;
+
+Console.WriteLine(Math.Round(myDouble6)); // Math.Round() rounds a number to the nearest whole number
