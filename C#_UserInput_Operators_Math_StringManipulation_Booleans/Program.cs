@@ -196,4 +196,15 @@ Console.WriteLine(myStringInterpol + " " + $"then i say again {myString}");
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 // ACCESS STRINGS
+// Access the characters in a string by referring to its index number inside square brackets []
 
+myString = "Marco";
+
+// variable[x]
+Console.WriteLine(myString[0] + " " + myString[1] + " " + myString[2] + " " + myString[3] + " " + myString[4]); // String indexes start with 0: [0] is the first character. [1] is the second character, etc
+
+// Index.Of();
+Console.WriteLine(myString.IndexOf("M")); // Find the index position of a specific character in a string, by using the IndexOf() method
+
+// Substring(x)
+Console.WriteLine(myString.Substring(3)); // Extracts the characters from a string, starting from the specified character position/index, and returns a new string. This method is often used together with IndexOf() to get the specific character position
